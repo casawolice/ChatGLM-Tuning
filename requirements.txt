@@ -4,12 +4,12 @@ accelerate>=0.21.0
 
 # chatglm
 torch>=2.1.0
-protobuf>=3.19.5,<3.20.1
+protobuf>=3.20.2,<4.0.1
 transformers>=4.37.0,<=4.38.2
 icetk
 cpm_kernels>=1.0.11
-tensorboard
+tensorboard<2.15,>=2.14
 timm==0.5.4
 # 
 datasets>=2.10.1,<2.19.0
-git+https://github.com/huggingface/peft.git  # 最新版本 >=0.3.0.dev0
+git+https://github.com/huggingface/peft.git#egg=peft[v0.10.0]  # 最新版本 >=0.3.0.dev0

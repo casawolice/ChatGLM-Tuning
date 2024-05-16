@@ -76,7 +76,7 @@ def main():
     parser.add_argument(
         "--chatglm_path",
         type=str,
-        default='/Users/ragin/.cache/modelscope/hub/ZhipuAI/chatglm3-6b')
+        default='/mnt/workspace/.cache/modelscope/ZhipuAI/chatglm3-6b')
     parser.add_argument("--version", type=str, default='v3')
     args = parser.parse_args()
 
