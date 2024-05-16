@@ -7,7 +7,6 @@ import transformers
 from modelscope.msdatasets import MsDataset
 
 
-
 def preprocess(tokenizer, config, example, max_seq_length, version):
     if version == 'v1':
         prompt = example["context"]
@@ -81,8 +80,8 @@ def main():
     args = parser.parse_args()
 
     dataset = datasets.Dataset.from_generator(
-        lambda: read_jsonl(args.jsonl_path, args.max_seq_length, args.
-                           chatglm_path, args.version, args.skip_overlength))
+        generator=read_jsonl(args.jsonl_path, args.max_seq_length, args.
+                             chatglm_path, args.version, args.skip_overlength))
     dataset.save_to_disk(args.save_path)
 
 
