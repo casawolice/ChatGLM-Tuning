@@ -1,15 +1,15 @@
 # int8
-bitsandbytes==0.37.1
-accelerate==0.17.1
+bitsandbytes>=0.37.1
+accelerate>=0.17.1
 
 # chatglm
+torch>=2.1.0
 protobuf>=3.19.5,<3.20.1
-transformers==4.27.1
+transformers>=4.37.0,<=4.38.2
 icetk
-cpm_kernels==1.0.11
-torch>=1.13.1
+cpm_kernels>=1.0.11
 tensorboard
-
+timm==0.5.4
 # 
-datasets==2.10.1
+datasets>=2.10.1,<2.19.0
 git+https://github.com/huggingface/peft.git  # 最新版本 >=0.3.0.dev0
